@@ -86,15 +86,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail->isSMTP();                                       //Send using SMTP
     $mail->SMTPAuth   = true;                              //Enable SMTP authentication
     $mail->Host       = 'smtp.gmail.com';                  //Set the SMTP server to send through
-    $mail->Username   = 'rakib.hasann.ds@gmail.com';          //SMTP username
-    $mail->Password   = 'aiir dndt tloa jdsl';                //SMTP password
+    $mail->Username   = 'youraddress@gmail.com';          //SMTP username
+    $mail->Password   = 'abcd efgh ijkl mno';                //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;    //Enable TLS encryption
     $mail->Port       = 587;                               //TCP port to connect to; use 587 if you have set `SMTPSecure`
 
 
     //Recipients
-    $mail->setFrom('rakib.hasann.ds@gmail.com', 'DermaCare');
-    $mail->addAddress('rakib.hasann.ds@gmail.com', 'Admin');     //Add a recipient
+    $mail->setFrom('youraddress@gmail.com', 'DermaCare');
+    $mail->addAddress('youraddress@gmail.com', 'Admin');     //Add a recipient
   
 
     // Content
@@ -538,4 +538,5 @@ doctorDropdown.addEventListener("change", () => {
 
 
 </body>
+
 </html>
